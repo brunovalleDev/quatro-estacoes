@@ -1,5 +1,4 @@
 header {
-  border: 1px solid black;
   z-index: 999;
   position: fixed;
   width: 100%;
@@ -8,49 +7,53 @@ header {
   justify-content: center;
 
   .nav-bar {
-    border: 1px solid black;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 0 200px;
 
     .logo {
       text-decoration: none;
-      text-transform: uppercase;
       letter-spacing: 2px;
       font-size: 1.8rem;
-      color: $dark-color;
+      color: $white-color;
       text-shadow: $text-shadow;
     }
 
     .navigation {
       .nav-item {
-        border: 1px solid black;
-
         i {
           display: none;
         }
 
-        a {
+        .nav-itens {
           text-decoration: none;
-          text-transform: uppercase;
-          color: $dark-color;
           letter-spacing: 1px;
-          font-size: 1em;
-          text-shadow: $text-shadow;
+          text-transform: uppercase;
+          color: $white-color;
         }
 
-        a:not(:last-child) {
+        .nav-itens:not(:last-child) {
           margin-right: 45px;
         }
       }
     }
+  }
 
-    .nav-close-btn,
-    .nav-open-btn {
-      display: none;
-    }
+  .nav-close-btn,
+  .nav-open-btn {
+    display: none;
+  }
+}
 
+.home {
+  min-height: 100vh;
+
+  .bg-slider {
+    z-index: 777;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
   }
 }
