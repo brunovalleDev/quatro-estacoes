@@ -59,9 +59,69 @@ header .nav-open-btn {
 }
 .home .bg-slider {
   z-index: 777;
-  position: relative;
-  min-height: 100vh;
   width: 100%;
+  position: relative;
+  height: 100vh;
+}
+.home .bg-slider .swiper-slide {
+  position: relative;
+  border: 1px solid green;
+  height: 100vh;
+}
+.home .bg-slider .swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  pointer-events: none;
+}
+.home .bg-slider .swiper-slide .text-structure {
+  position: absolute;
+  top: 25%;
+  padding: 0 200px;
+  color: white;
+}
+.home .bg-slider .swiper-slide .text-structure h2 {
+  color: inherit;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.home .bg-slider .swiper-slide .text-structure p {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.home .bg-slider .swiper-slide .text-structure .saiba-mais-btn {
+  outline: none;
+  border: none;
+  padding: 8px 25px;
+  margin-top: 40px;
+  border-radius: 10px;
+  color: #222;
+  font-size: 1em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.home .bg-slider .swiper-slide .text-structure .saiba-mais-btn i {
+  font-size: 1.5rem;
+  transition-property: all;
+  transition-delay: 0.1s;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  margin-left: 0.6rem;
+}
+.home .bg-slider .swiper-slide .text-structure .saiba-mais-btn:hover i {
+  transform: translateX(10px);
 }
 
 /**
